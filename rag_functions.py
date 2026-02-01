@@ -48,11 +48,13 @@ except LookupError:
 # In[ ]:
 
 
-def extract_text_from_pdf(pdf_path):
+def extract_text_from_pdf(uploaded_file):
+    reader = PyPDF2.PdfReader(uploaded_file)
+    
     text = ""
-    with fitz.open(pdf_path) as pdf:
-        for page in pdf:
-            text += page.get_text()
+    for page in reader.pages:
+        text += page.extract_text()
+    
     return text
 
 
