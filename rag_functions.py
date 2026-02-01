@@ -11,15 +11,14 @@ import nltk
 import PyPDF2
 from sentence_transformers import SentenceTransformer
 from transformers import AutoModelForCausalLM, AutoTokenizer
-from langchain.vectorstores import FAISS
 import torch
 import requests
 import fitz  # PyMuPDF
-from langchain.embeddings import HuggingFaceEmbeddings
-from langchain.vectorstores import FAISS
 from groq import Groq
 import pandas as pd
 import re
+from langchain_community.vectorstores import FAISS
+from langchain_community.embeddings import HuggingFaceEmbeddings
 from langchain_groq import ChatGroq
 
 
