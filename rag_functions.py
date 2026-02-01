@@ -2,7 +2,7 @@
 # coding: utf-8
 
 # In[ ]:
-
+import os
 import re
 import string
 from nltk.corpus import stopwords
