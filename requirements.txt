@@ -1,3 +1,4 @@
+os
 streamlit
 nltk
 pypdf2
@@ -12,3 +13,4 @@ faiss-cpu
 groq
 pandas
 requests
+
