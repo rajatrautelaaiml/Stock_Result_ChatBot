@@ -1,2 +1,2 @@
-# CC_Reddit_Review_Chatbot
-The Chatbot answers the questions based on the Credit Card reviews scraped from a subreddit r/CreditCardsIndia
+# Stock_Result_Chatbot
+The Chatbot answers the questions related to a Company's result using the published report in PDF Format
