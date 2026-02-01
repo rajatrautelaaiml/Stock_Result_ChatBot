@@ -26,10 +26,24 @@ from langchain_groq import ChatGroq
 # In[ ]:
 
 
-# Download NLTK resources (only needed once)
-nltk.download('punkt')
-nltk.download('stopwords')
-nltk.download('wordnet')
+import nltk
+
+nltk.data.path.append("/tmp")
+
+try:
+    nltk.data.find('tokenizers/punkt')
+except LookupError:
+    nltk.download('punkt', download_dir="/tmp")
+
+try:
+    nltk.data.find('corpora/stopwords')
+except LookupError:
+    nltk.download('stopwords', download_dir="/tmp")
+
+try:
+    nltk.data.find('corpora/wordnet')
+except LookupError:
+    nltk.download('wordnet', download_dir="/tmp")
 
 
 # In[ ]:
