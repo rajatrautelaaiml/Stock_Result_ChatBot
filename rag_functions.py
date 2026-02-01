@@ -3,7 +3,6 @@
 
 # In[ ]:
 
-pip install --upgrade pip
 import re
 import string
 from nltk.corpus import stopwords
